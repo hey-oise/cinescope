@@ -3,80 +3,30 @@
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="logo.png" />
+  <link rel="icon" href="/images/logo.png">
   <title>CineScope</title>
-  <style>
-    body {
-      width: 95vw;
-      height: 97vh;
-      background-size: cover;
-      background-image: url("bg-img.jpg");
-    }
-
-    * {
-      font-family: heebo;
-    }
-
-    .topbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      background: #111;
-      width: 100%;
-      height: 10%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 20;
-    }
-
-    .topbar h1 {
-      color: #cdb;
-      color: #ac2020;
-      margin: 2vw 3vw;
-      text-shadow: 2px 2px 3px #c07f7f;
-    }
-
-    a {
-      color: #000;
-      text-decoration: none;
-      outline: none;
-      z-index: 1;
-    }
-
-    .searchbar {
-      width: 17vh;
-      height: 3vh;
-      margin-right: 2%;
-      border-radius: 1vh;
-      border: none;
-      display: inline;
-      z-index: 25;
-
-    }
-
-    sup {
-      color: #cdb;
-      font-size: small;
-    }
-  </style>
-  <script>
-  </script>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="main.js"></script>
 </head>
 <body>
   <!--header-->
   <div class="topbar">
     <a href="index.html">
-      <h1 class="logo">CineScope<sup> reviews</sup></h1>
+      <h1 class="logo">CineScope</h1>
     </a>
-    <form id="frmSearch" class="searchbar" method="get" action="default.html" />
-    <input class="searchbar" id="txtSearch" type="text" name="serach_bar" placeholder="Search" value="" />
+    <input class="searchbar" id="txtSearch" type="search" name="serach_bar" placeholder="Search" value=""/>
+  </div>
+<div class="bg"></div>
+  <div class="parent">  
+  <div class="row">
+    <div class="column">
+      <div class="card">
+       <center><img src="images/tumbnails/wakanda foreva.jpg" alt="" class="tumbnail"></center>
+       <h3 class="movie-title"></h3>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
-</html>
-<script type="text/javascript">
-  document.getElementById('frmSearch').onsubmit = function () {
-    window.location = 'https://www.rottentomatoes.com/search?search= ' + document.getElementById('txtSearch').value;
-    return false;
-  }
-</script>
+</html> 
