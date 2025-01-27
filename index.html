@@ -6,27 +6,34 @@
   <link rel="icon" href="/images/logo.png">
   <title>CineScope</title>
   <link rel="stylesheet" href="main.css">
-  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
   <script src="main.js"></script>
 </head>
 <body>
+
   <!--header-->
   <div class="topbar">
     <a href="index.html">
       <h1 class="logo">CineScope</h1>
     </a>
-    <input class="searchbar" id="txtSearch" type="search" name="serach_bar" placeholder="Search" value=""/>
+    <form id="form" role="search">
+      <input class="searchbar" id="query" type="search" name="serach_bar" placeholder="Search" value="" />
+    </form>
   </div>
-<div class="bg"></div>
-  <div class="parent">  
+  <div class="bg"></div>
+  <section id="section">
+
+    <!-- <div class="parent">  
   <div class="row">
     <div class="column">
       <div class="card">
-       <center><img src="images/tumbnails/wakanda foreva.jpg" alt="" class="tumbnail"></center>
+        <center><img class="tumbnail" src="images/tumbnails/wakanda-forever.jpg" alt="wakanda-forever"></center>
+        <h3 class="movie-title">Wakanda Forever</h3>
        <h3 class="movie-title"></h3>
         </div>
       </div>
     </div>
   </div>
+   -->
+  </section>
 </body>
-</html> 
+</html>
