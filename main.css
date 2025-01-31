@@ -46,7 +46,7 @@ a {
   text-decoration: none;
 }
 
-.searchbar {
+.search {
   width: 200px;
   height: 27px;
   margin-right: 2%;
@@ -59,7 +59,7 @@ a {
   border: none;
 }
 
-.parent {
+.section {
   padding-top: 400px;
   height: fit-content;
 }
